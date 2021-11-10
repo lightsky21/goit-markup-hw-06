@@ -182,21 +182,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-contacts-link:focus .icon-envelope,
-.header-contacts-link:hover .icon-envelope,
-.header-contacts-link:focus .icon-smartphone,
-.header-contacts-link:hover .icon-smartphone {
-  fill: var(--accent-color);
-}
 .header-contacts {
   display: flex;
 }
 .icon-envelope,
 .icon-smartphone {
   margin-right: 10px;
-  fill: var(--primary-text-color);
-
-  transition: fill 250ms var(--timing-function);
+  fill: currentColor;
 }
 
 .header-contacts-link {
@@ -258,7 +250,7 @@ img {
 }
 .footer-social-link {
   background-color: var(--footer-icon-background-color);
-
+  color: var(--primary-title-color);
   transition: background-color 250ms var(--timing-function);
 }
 .footer-social-link:focus,
@@ -276,7 +268,7 @@ img {
   color: var(--primary-title-color);
 }
 .footer-social-icon {
-  fill: var(--primary-title-color);
+  fill: currentColor;
 }
 
 /* ------------------------hero---------------------- */
@@ -472,19 +464,17 @@ img {
 }
 
 .our-team-social-link {
-  transition: background-color 250ms var(--timing-function);
+  color: var(--icon-fill);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 .our-team-social-link:hover,
 .our-team-social-link:focus {
+  color: var(--primary-title-color);
   background-color: var(--accent-color);
 }
 .our-team-icon {
-  fill: var(--icon-fill);
-  transition: fill 250ms var(--timing-function);
-}
-.our-team-social-link:hover .our-team-icon,
-.our-team-social-link:focus .our-team-icon {
-  fill: var(--primary-title-color);
+  fill: currentColor;
 }
 
 /* --------------------our-clients section--------------------------- */
@@ -507,23 +497,19 @@ img {
   height: 92px;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-
-  transition: border-color 250ms var(--timing-function);
+  color: var(--icon-fill);
+  transition: border-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 .our-clients-link:hover,
 .our-clients-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 .our-clients-icon {
-  fill: var(--icon-fill);
-
-  transition: fill 250ms var(--timing-function);
+  fill: currentColor;
 }
 
-.our-clients-link:hover .our-clients-icon,
-.our-clients-link:focus .our-clients-icon {
-  fill: var(--accent-color);
-}
 /* -----------------our-projects section----------------------- */
 .filter-btn-list {
   display: flex;
